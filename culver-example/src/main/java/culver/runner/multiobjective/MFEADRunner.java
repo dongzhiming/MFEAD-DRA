@@ -84,7 +84,7 @@ public class MFEADRunner extends AbstractAlgorithmRunner {
 
                 for (int i = 0; i < population.size(); i++) {
                     int skillFactor = population.get(i).getSkillFactor();
-                    solutionList.get(skillFactor).add((DoubleSolution) population.get(i).getSolution(skillFactor));
+                    solutionList.get(skillFactor).add(population.get(i).getSolution(skillFactor));
                 }
 
                 System.out.print(run + "\t");
